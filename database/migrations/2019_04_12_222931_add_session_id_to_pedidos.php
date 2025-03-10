@@ -13,8 +13,7 @@ class AddSessionIdToPedidos extends Migration
      */
     public function up()
     {
-        Schema::table('pedidos', function (Blueprint $table) 
-        {
+        Schema::table('pedidos', function (Blueprint $table) {
             //
         });
     }
