@@ -35,6 +35,8 @@ class CarrinhoController extends Controller
 		$IdPedido = Pedido::consultaPedido($sessionID);
 
 		$request = Request();
+		
+		$request = produtos()
     	$produto_id = $request->input("produto_id");
 
 		$produtoDelete = PedidoItem::where(['produto_id' => $produto_id, 'pedido_id' => $IdPedido])->first()->delete();
